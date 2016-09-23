@@ -1,0 +1,23 @@
+author = "Heisen"; // Don't remove.
+onLoadName = "OS Life Framework 0.0.1"; // Don't remove.
+onLoadMission = "A roleplay mission developed by Heisen."; // Don't remove.
+joinUnassigned = 1;
+respawn = BASE;
+respawndelay = 5;
+disabledAI = true;
+disableChannels[]={1,2};
+enableDebugConsole = 1;
+respawnDialog = 0;
+
+class Header
+{
+	gameType = RPG;
+	minPlayers = 1;
+	maxPlayers = 80;
+};
+
+#include "dialogs\handle.h"
+
+class CfgFunctions {
+	#include "functions.hpp"
+};
