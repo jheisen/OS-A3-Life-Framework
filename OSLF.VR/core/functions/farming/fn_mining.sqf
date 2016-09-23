@@ -7,7 +7,7 @@ _curObj = getModelInfo cursorObject;
 
 switch (_curObj select 0) do {
 	case "sharpstone_01.p3d": {
-		ore = "30Rnd_65x39_caseless_mag";
+		ore = "30Rnd_65x39_caseless_mag"; // ignore
 	};
 	default {};
 };
