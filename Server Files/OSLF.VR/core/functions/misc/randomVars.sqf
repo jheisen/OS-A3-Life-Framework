@@ -1,2 +1,2 @@
 
-minedRocks = [];
+minedRocks = [""];

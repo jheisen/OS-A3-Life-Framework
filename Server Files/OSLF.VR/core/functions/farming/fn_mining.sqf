@@ -12,9 +12,9 @@ switch (_curObj select 0) do {
 	default {};
 };
 
-if (_curObj IN minedRocks) exitWith { systemChat "Recently mined." };
-if (isNil "ore") exitWith { systemChat "Not a rock."};
-if (ore == "") exitWith { systemChat "Not a rock."};
+if (cursorObject IN minedRocks) exitWith { hint "Recently mined." };
+if (isNil "ore") exitWith { hint "Not a rock."};
+if (ore == "") exitWith { hint "Not a rock."};
 
 _currentXp = player getVariable "miningExp";
 
