@@ -1,11 +1,11 @@
+//temp
+execVM "core\functions\misc\randomVars.sqf";
 
-/* temp vars */
-nsrServer_loaded = true; 
+oslfServer_loaded = true;
 firstConnect = true;
-minedRocks = [];
-/* */
+//
 
-waitUntil {nsrServer_loaded};
+waitUntil {oslfServer_loaded};
 	if (firstConnect) then {
 		[] call h_fnc_firstConnect;
 	};
