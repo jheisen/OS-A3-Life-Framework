@@ -8,9 +8,9 @@ _trees = ["t_ficus_medium_f.p3d"];
 
 _curObj = getModelInfo cursorObject;
 
-if !(_curObj select 0 IN _trees) exitWith {};
-if (player distance cursorObject < 4) exitWith {};
-if (getDammage cursorObject > 1) exitWith {};
+if !(_curObj select 0 IN _trees) exitWith { hint "Not a tree."};
+if (player distance cursorObject < 4) exitWith { hint "Not close enough." };
+if (getDammage cursorObject > 1) exitWith { hint "Already chopped down." };
 
 systemChat str (getDammage cursorObject);
 _current = getDammage cursorObject;
