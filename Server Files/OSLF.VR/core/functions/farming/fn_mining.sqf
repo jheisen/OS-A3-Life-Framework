@@ -1,4 +1,8 @@
-// Mining
+/*------------------------------------------------
+	Author: Heisen
+	File: fn_mining.sqf
+	Desc: Mining system.
+------------------------------------------------*/
 
 params ["_num"];
 ore = "";
@@ -7,7 +11,7 @@ _curObj = getModelInfo cursorObject;
 
 switch (_curObj select 0) do {
 	case "sharpstone_01.p3d": {
-		ore = "30Rnd_65x39_caseless_mag"; // ignore
+		ore = "OSLF_IronOre"; // ignore
 	};
 	default {};
 };
