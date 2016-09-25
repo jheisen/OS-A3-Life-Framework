@@ -40,6 +40,7 @@ class HeisensFunctions
 		class reductCash{};
 		class changeHunger{};
 		class changeThirst{};
+		class survival{};
 	};
 
 };

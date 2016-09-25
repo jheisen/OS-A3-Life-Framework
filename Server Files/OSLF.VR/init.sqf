@@ -6,6 +6,9 @@ firstConnect = true;
 //
 
 waitUntil {oslfServer_loaded};
-	if (firstConnect) then {
-		[] call h_fnc_firstConnect;
-	};
+
+if (firstConnect) then {
+	[] call h_fnc_firstConnect;
+};
+[] call h_fnc_survival;
+

@@ -7,3 +7,7 @@ if (_type == "+") then {
 	if !(_type == "-") exitWith {};
 	player setVariable["hunger",(player getVariable "hunger") - (_newValue)];
 };
+
+changed = true;
+sleep 2;
+changed = false;
