@@ -10,10 +10,10 @@ _curObj = getModelInfo cursorObject;
 
 if !(_curObj select 0 IN _trees) exitWith { hint "Not a tree."};
 if (player distance cursorObject > 4) exitWith { hint "Not close enough." };
-if (getDammage cursorObject > 1) exitWith { hint "Already chopped down." };
+if (damage cursorObject > 1) exitWith { hint "Already chopped down." };
 
 systemChat str (getDammage cursorObject);
-_current = getDammage cursorObject;
+_current = damage cursorObject;
 
 if (_current > 0.9) then {
 	player addMagazine "OSLF_WoodLog";
