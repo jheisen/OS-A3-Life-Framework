@@ -1,7 +1,7 @@
 while {true} do {
-	sleep 500;
+	sleep 250;
 	player setVariable ["hunger",(player getVariable "hunger") - (1)];
-	sleep 100;
+	sleep 50;
 	player setVariable ["thirst",(player getVariable "thirst") - (1)];
 };
 while {true} do {
