@@ -1,5 +1,4 @@
 // Add experience to player for said skill
-// Not tested
 
 _skill = _this select 0;
 _value = _this select 1;

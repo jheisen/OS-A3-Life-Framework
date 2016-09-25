@@ -1,36 +1,45 @@
 
 class HeisensFunctions
 {
-	
+
 	tag = "h";
-	
-	class core	
+
+	class core
 	{
 		file = "core";
 		class firstConnect{};
 	};
-	
-	class farming 
+
+	class eventhandlers
+	{
+		file = "core\eventhandlers";
+		class evhFired{};
+		class evhHitPart{};
+	};
+
+	class farming
 	{
 		file = "core\functions\farming";
 		class mining{};
-	}
-	
+		class chopTree{};
+	};
+
 	class atm
 	{
 		file = "core\functions\atm";
 		class atmDeposit{};
 		class atmTransfer{};
 		class atmWithdraw{};
-	}
-	
-	class misc 
+	};
+
+	class misc
 	{
 		file = "core\functions\misc";
 		class addExperience{};
 		class addCash{};
+		class reductCash{};
 		class changeHunger{};
 		class changeThirst{};
-	}
-	
+	};
+
 };

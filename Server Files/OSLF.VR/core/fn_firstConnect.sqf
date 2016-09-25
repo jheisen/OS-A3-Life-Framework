@@ -14,3 +14,7 @@ transactionHistory = [
 	// From,To,Type,Money Sent.
 	["Goverment",name player,"Wire Transfer",1250]
 ];
+
+licenses = [
+	["Driving License",0]
+];
