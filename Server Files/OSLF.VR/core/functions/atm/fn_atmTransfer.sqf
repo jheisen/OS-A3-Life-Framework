@@ -18,7 +18,7 @@ if (player getVariable "bank" + _toTrans < _tax) exitWith {
 
 {
 	if (getPlayerUID _x == _selectedPlayer select 1) then {
-		_x setVariable["bank",(_x getVariable "bank") + (_toTrans)];
+		_x setVariable["bank",(_x getVariable "bank") + (_toTrans),true];
 	};
 }forEach allPlayers;
 
